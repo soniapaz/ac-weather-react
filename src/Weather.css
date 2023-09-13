@@ -1,0 +1,63 @@
+.search-bar,
+.secondary-buttons {
+  background-color: var(--color-primary);
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  margin: 0 0.4rem;
+}
+
+button,
+a {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+}
+
+.pipe {
+  border-left: 1px solid var(--text-color);
+}
+
+audio {
+  display: none;
+}
+
+.swal2-image {
+  margin-top: 15px;
+  margin-bottom: 4px;
+  width: 26%;
+}
+
+.swal2-title {
+  font-size: 27px !important;
+  padding-bottom: 5px;
+}
+
+.swal2-html-container {
+  font-size: 16px !important;
+}
+
+.swal2-confirm {
+  font-size: 14px !important;
+}

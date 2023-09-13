@@ -1,0 +1,83 @@
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .main-content {
+    height: 400px;
+  }
+}
+
+.body {
+  background-color: transparent;
+  width: 105%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  margin: auto;
+  width: 300px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-1 {
+  position: absolute;
+  top: 0;
+  width: 1025px;
+  height: 200px;
+  background-image: url(/images/cloud1.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 1;
+  animation: move_first_cloud 15s linear infinite;
+}
+
+@keyframes move_first_cloud {
+  0% {
+    left: -1025px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.background-2 {
+  position: absolute;
+  top: 0;
+  width: 1125px;
+  height: 200px;
+  background-image: url(/images/cloud2.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 10;
+  animation: move_second_cloud 20s linear infinite;
+}
+@keyframes move_second_cloud {
+  0% {
+    left: -1125px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.main-content img {
+  position: absolute;
+  right: 50px;
+  width: 230px;
+  z-index: 2;
+  animation: move_plane 4s linear infinite;
+}
+
+@keyframes move_plane {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 20px;
+  }
+}

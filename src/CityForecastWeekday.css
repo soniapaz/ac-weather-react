@@ -1,0 +1,9 @@
+.thu-forecast,
+.fri-forecast,
+.sat-forecast,
+.sun-forecast,
+.mon-forecast {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-right: 7px;
+}

@@ -1,0 +1,60 @@
+.current-max-temp,
+.current-min-temp,
+.humidity,
+.wind {
+  font-size: 14px;
+}
+
+.current-conditions {
+  line-height: 1.2;
+}
+
+.current-conditions h1 {
+  font-size: 63px;
+  padding-top: 20px;
+  padding-right: 62px;
+  margin: 0;
+  position: relative;
+  top: 12px;
+}
+
+.unit-current-temp-chosen {
+  font-size: 17px;
+  position: relative;
+  top: -53px;
+  left: 35px;
+  font-weight: bold;
+}
+
+.current-conditions .pipe {
+  font-size: 16px;
+  position: relative;
+  top: -27px;
+  left: 22px;
+}
+
+.unit-conversion-button {
+  font-family: "Arvo", serif;
+  font-size: 15px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 1px 1px 3px #8b8974;
+  position: relative;
+  left: 50px;
+  top: -54px;
+  width: 32px;
+  line-height: 16px;
+  padding: 1px 3px 0px 0px;
+}
+
+.unit-conversion-button:active {
+  transform: translateY(0.5px);
+}
+
+.current-feels-like {
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 45px;
+}

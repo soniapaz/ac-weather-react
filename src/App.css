@@ -1,1 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+:root {
+  --text-font: "Arvo", serif;
+  --text-color: #fff;
+  --color-primary: #6bb888;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/*4K*/
+@media (max-width: 2560px) {
+  .container {
+    margin-left: -30% !important;
+  }
+}
+
+/*Laptop L*/
+@media (max-width: 1900px) {
+  .container {
+    margin-left: -22% !important;
+  }
+}
+
+/*Laptop*/
+@media (max-width: 1400px) {
+  .container {
+    margin-left: auto !important;
+  }
+}
+
+/*Mobile L*/
+@media (max-width: 576px) {
+  main {
+    margin-top: 2.5rem !important;
+  }
+
+  .date-city-weather-column {
+    width: 18rem !important;
+  }
+
+  .current-city {
+    font-size: 35px !important;
+    margin-bottom: 4px !important;
+    margin-top: 5px;
+  }
+
+  .forecast-day-1,
+  .forecast-day-2,
+  .forecast-day-3,
+  .forecast-day-4,
+  .forecast-day-5 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  .forecast-day-5 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*Mobile S*/
+@media (max-width: 320px) {
+  .search-input {
+    width: 90%;
+  }
+}
+
+* {
+  font-family: var(--text-font);
+}
+
+body {
+  background-image: url(/images/ac-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

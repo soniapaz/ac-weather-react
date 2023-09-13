@@ -1,0 +1,40 @@
+.forecast-weekday {
+  margin-bottom: 11px;
+}
+
+.forecast-day canvas {
+  width: 47%;
+  margin: auto;
+}
+
+.forecast-day-1,
+.forecast-day-2,
+.forecast-day-3,
+.forecast-day-4,
+.forecast-day-5 {
+  border-radius: 30px;
+  padding-top: 15px;
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.forecast-day-1 {
+  background-color: #f28b73;
+}
+
+.forecast-day-2 {
+  background-color: #74c894;
+}
+
+.forecast-day-3 {
+  background-color: #85cfe2;
+}
+
+.forecast-day-4 {
+  background-color: #fbacc7;
+}
+
+.forecast-day-5 {
+  background-color: #b7b398;
+}

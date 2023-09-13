@@ -1,10 +1,13 @@
+import Weather from "./Weather";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="container"></header>
-    </div>
+    <main className="App">
+      <div className="container">
+        <Weather initialLocation="Málaga" />
+      </div>
+    </main>
   );
 }
 
