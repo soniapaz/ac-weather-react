@@ -170,7 +170,13 @@ export default function Weather(props) {
               <ul className="d-flex justify-content-end m-0">
                 <li className="ms-1">
                   <button className="delete-button" type="reset" title="Clear">
-                    <FontAwesomeIcon icon={faXmark} className="delete-icon" />
+                    <span className="sr-only">Clear</span>
+                    <FontAwesomeIcon
+                      icon={faXmark}
+                      className="delete-icon"
+                      role="img"
+                      aria-hidden="true"
+                    />
                   </button>
                 </li>
                 <li className="ms-1">
@@ -182,9 +188,12 @@ export default function Weather(props) {
                     type="submit"
                     title="Search"
                   >
+                    <span className="sr-only">Search</span>
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass}
                       className="search-icon"
+                      role="img"
+                      aria-hidden="true"
                     />
                   </button>
                 </li>
@@ -199,9 +208,14 @@ export default function Weather(props) {
                     title="Search your current location"
                     onClick={readCurrentLocation}
                   >
+                    <span className="sr-only">
+                      Search your current location
+                    </span>
                     <FontAwesomeIcon
                       icon={faLocationDot}
                       className="location-icon"
+                      role="img"
+                      aria-hidden="true"
                     />
                   </button>
                 </li>
@@ -212,10 +226,21 @@ export default function Weather(props) {
                     title="Play and pause music"
                     onClick={handleTogglePlay}
                   >
+                    <span className="sr-only">Play and pause music</span>
                     {isPlaying ? (
-                      <FontAwesomeIcon icon={faPause} className="pause-icon" />
+                      <FontAwesomeIcon
+                        icon={faPause}
+                        className="pause-icon"
+                        role="img"
+                        aria-hidden="true"
+                      />
                     ) : (
-                      <FontAwesomeIcon icon={faPlay} className="play-icon" />
+                      <FontAwesomeIcon
+                        icon={faPlay}
+                        className="play-icon"
+                        role="img"
+                        aria-hidden="true"
+                      />
                     )}
                   </button>
                   {isPlaying ? (
@@ -236,7 +261,13 @@ export default function Weather(props) {
                     title="See the project on GitHub"
                     className="ps-2 pe-2 ps-md-0 pe-md-0"
                   >
-                    <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                    <span className="sr-only">See the project on GitHub</span>
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="github-icon"
+                      role="img"
+                      aria-hidden="true"
+                    />
                   </a>
                 </li>
               </ul>

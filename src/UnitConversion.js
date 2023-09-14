@@ -58,6 +58,7 @@ export default function UnitConversion(props) {
         title="Change the temperature unit"
         onClick={unit === "celsius" ? convertToFahrenheit : convertToCelsius}
       >
+        <span className="sr-only">Change the temperature unit</span>
         <span>{unit === "celsius" ? " ºF" : " ºC"}</span>
       </button>
       <p className="current-feels-like">
