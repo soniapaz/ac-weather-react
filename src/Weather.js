@@ -236,7 +236,7 @@ export default function Weather(props) {
                     title="See the project on GitHub"
                     className="ps-2 pe-2 ps-md-0 pe-md-0"
                   >
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faGithub} className="github-icon" />
                   </a>
                 </li>
               </ul>

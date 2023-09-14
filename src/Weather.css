@@ -39,6 +39,10 @@ a {
   border-left: 1px solid var(--text-color);
 }
 
+.github-icon {
+  margin-top: 5px;
+}
+
 audio {
   display: none;
 }
